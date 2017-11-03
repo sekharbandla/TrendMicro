@@ -1,0 +1,3 @@
+I, [2017-11-02T11:52:31.919394 #24771]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
+I, [2017-11-02T11:52:35.347013 #24771]  INFO -- Kitchen: -----> Destroying <default-RHEL-07>...
+I, [2017-11-02T11:52:35.490716 #24771]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.57s)

@@ -1,0 +1,3 @@
+I, [2017-11-02T11:52:35.347081 #24771]  INFO -- default-RHEL-07: -----> Destroying <default-RHEL-07>...
+I, [2017-11-02T11:52:35.489118 #24771]  INFO -- default-RHEL-07: EC2 instance <i-04b5b89aac5fcdd81> destroyed.
+I, [2017-11-02T11:52:35.489775 #24771]  INFO -- default-RHEL-07: Finished destroying <default-RHEL-07> (0m0.14s).

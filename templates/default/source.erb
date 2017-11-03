@@ -1,0 +1,19 @@
+AddressAndPortsScreen.NewNode=True
+CredentialsScreen.Administrator.Username=<%= node['TrendMicro']['TrendMicro_UserName'] %>
+CredentialsScreen.Administrator.Password=<%= node['TrendMicro']['TrendMicro_Password'] %>
+CredentialsScreen.UseStrongPasswords=False
+Dinstall4j.language=en
+DatabaseScreen.DatabaseType=<%= node['TrendMicro']['TrendMicro_Database_Type'] %>
+DatabaseScreen.Hostname=<%= node['TrendMicro']['PostgreSQL.address'] %>
+DatabaseScreen.DatabaseName=<%= node['TrendMicro']['PostgreSQL.name'] %>
+DatabaseScreen.Transport=TCP
+DatabaseScreen.Username=<%= node['TrendMicro']['PostgreSQL.username'] %>
+DatabaseScreen.Password=<%= node['TrendMicro']['TendMicro_DB_Password'] %>
+AddressAndPortsScreen.ManagerPort=4119
+AddressAndPortsScreen.HeartbeatPort=4120
+SecurityUpdateScreen.UpdateComponents=true
+SecurityUpdateScreen.UpdateSoftware=true
+SmartProtectionNetworkScreen.EnableFeedback=false
+SmartProtectionNetworkScreen.IndustryType=blank
+RelayScreen.Install=True
+SoftwareUpdateScreen.Proxy=False

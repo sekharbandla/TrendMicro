@@ -1,0 +1,10 @@
+default['TrendMicro']['bucket_name']= 'satish-trendmicro-server-script'
+default['TrendMicro']['file_name']= 'Manager-Linux-9.6.4085.x64.sh'
+default['TrendMicro']['TrendMicro_UserName']= 'masteradmin'
+default['TrendMicro']['TrendMicro_Password']= 'satish@123'
+default['TrendMicro']['TrendMicro_Database_Type']= 'PostgreSQL'
+default['TrendMicro']['PostgreSQL.address']= 'raja-postgres.c562jxh8kc1b.us-west-2.rds.amazonaws.com'
+default['TrendMicro']['PostgreSQL.name']= 'dsm'
+default['TrendMicro']['PostgreSQL.username']= 'dsm'
+default['TrendMicro']['TendMicro_DB_Password']= 'satish123'
+

@@ -1,0 +1,63 @@
+---
+driver:
+
+  name: ec2
+
+  region: us-west-2
+
+  subnet_id: subnet-55c9c032
+
+  security_group_ids: ["sg-3325d649"]
+
+  aws_ssh_key_id: Raja
+
+  iam_profile_name: s3accesstoec2  
+
+  use_iam_profile: true
+
+  associate_public_ip: true
+
+  tags:
+
+    Owner: rajasekhar.bandla
+
+    Environment: Testing
+
+    Project: reandeploy
+
+    ExpirationDate: 2017/11/30
+
+transport:
+
+  ssh_key: /home/ec2-user/Raja.pem
+
+  username: ec2-user
+
+verifier:
+
+  name: inspec
+
+platforms:
+
+  # Ubuntu xenial
+
+  - name: RHEL-0.7  
+
+    driver:
+
+      instance_type: t2.medium
+
+      image_id: ami-9fa343e7
+
+      tags:
+
+        Name: stig-rhel-7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[TrendMicro::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default/default_test.rb
+    attributes:
