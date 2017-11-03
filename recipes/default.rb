@@ -42,5 +42,5 @@ execute 'sh /tmp/aws.sh' do
 end
 
 execute 'something' do
- command 'sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
+ command 'sudo sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
 end
