@@ -3,9 +3,6 @@
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 
-execute 'update' do
- command 'yum update -y'
-end
 execute 'install wget' do
  command 'yum -y install wget'
 end
@@ -42,5 +39,5 @@ execute 'sh /tmp/aws.sh' do
 end
 
 execute 'something' do
- command 'sudo sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
+ command 'sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
 end
