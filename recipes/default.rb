@@ -4,7 +4,7 @@
 
 
 execute 'update' do
- command 'sudo yum update -y'
+ command 'yum update -y'
 end
 execute 'install wget' do
  command 'yum -y install wget'
@@ -42,5 +42,5 @@ execute 'sh /tmp/aws.sh' do
 end
 
 execute 'something' do
- command 'sudo sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
+ command 'sh /tmp/trendmicro-manager.sh -q -console -varfile /tmp/properties'
 end
